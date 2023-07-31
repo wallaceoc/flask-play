@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All Films</title>
+
+    </head>
+
+    <body>
+        <table>
+            <thead>
+                <th>Film</th>
+                <th>Stars</th>
+            </thead>            
+            <tbody>            
+                {% for film in films %}
+                <tr>
+                    <td>{{film.film_name}}</td>
+                    <td>{{film.stars}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

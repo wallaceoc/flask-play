@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Film Submission</title>
+    </head>
+    <body>
+        {% if message %}
+        <h1>{{message.content}}</h1>
+        {% endif %}
+        
+        <form method="post">
+            <label for="film-name">Film Name</label>
+            <input id="film-name" name="film-name" type="text" required/>
+
+            <label for="stars">Stars</label>
+            <input id="stars" name="stars" type="number" min="0" max="5" required/>
+
+            <button>Submit Film</button>
+        </form>
+    </body>
+</html>
